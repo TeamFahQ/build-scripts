@@ -1,4 +1,5 @@
 #!/bin/bash
+# used with .bashrc alias hh='reset && ./scripts/hammerhead.sh'
 
 OPTIND=1
 root=/media/thomas/Development/BrokenOs

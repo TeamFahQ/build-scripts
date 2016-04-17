@@ -1,4 +1,6 @@
 #!/bin/bash
+# used with .bashrc alias make-all='reset && ./scripts/make-all.sh'
+# For official builds on all my devices
 
 root=/media/thomas/Development/BrokenOs
 
