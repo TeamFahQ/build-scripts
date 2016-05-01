@@ -4,7 +4,7 @@
 OPTIND=1
 root=/media/thomas/Development/BrokenOs
 
-while getopts "clean dirty official kernal:" opt; do
+while getopts "clean:dirty:official:kernal:" opt; do
     case "$opt" in
     c) $root/build-broken.sh -c1 -p -a -j8 shamu ;;
     d) $root/build-broken.sh -c2 -p -a -j10 shamu ;;
