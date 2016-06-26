@@ -2,7 +2,7 @@
 # used with .bashrc alias flo='reset && ./scripts/flo.sh'
 
 OPTIND=1
-root=/media/thomas/Development/BrokenOs
+root=/media/thomas/Dev/BrokenOs
 
 while getopts "clean:dirty:official:kernal:" opt; do
     case "$opt" in

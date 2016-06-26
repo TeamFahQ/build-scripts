@@ -2,7 +2,7 @@
 # used with .bashrc alias hh='reset && ./scripts/hammerhead.sh'
 
 OPTIND=1
-root=/media/thomas/Development/BrokenOs
+root=/media/thomas/Dev/BrokenOs
 
 while getopts "clean:dirty:official:kernal:" opt; do
     case "$opt" in
