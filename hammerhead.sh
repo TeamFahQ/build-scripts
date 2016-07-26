@@ -2,9 +2,9 @@
 # used with .bashrc alias hh='reset && ./scripts/hammerhead.sh'
 
 OPTIND=1
-root=/media/thomas/Dev/BrokenOs
+root=~/BrokenOs
 
-while getopts "clean:dirty:official:kernal:" opt; do
+while getopts "clean:dirty:official:kernel:" opt; do
     case "$opt" in
     c) $root/build-broken.sh -c1 -p -a -j8 hammerhead ;;
     d) $root/build-broken.sh -c2 -p -a -j10 hammerhead ;;
