@@ -4,6 +4,6 @@
 
 root=/media/thomas/Dev/BrokenOs
 
-$root/build-broken.sh -c10 -p -a -j10 shamu
-$root/build-broken.sh -c10 -p -a -j10 hammerhead
-$root/build-broken.sh -c10 -p -a -j10 flo 
+$root/build-broken.sh -c10 -p -a -j18 shamu
+$root/build-broken.sh -c10 -p -a -j18 hammerhead
+$root/build-broken.sh -c10 -p -a -j18 flo 
