@@ -11,7 +11,7 @@ while getopts "clean:dirty:official:kernel:" opt; do
     o) $root/build-broken.sh -c10 -p -a -j18 hammerhead ;;
     k) source $root/build/envsetup.sh
 	lunch broken_hammerhead-userdebug
-		make bootzip -j18 ;;
+		make bootzip -j18;exit ;;
     esac
 done
 

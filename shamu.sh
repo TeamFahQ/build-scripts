@@ -11,7 +11,7 @@ while getopts "clean:dirty:official:kernel:" opt; do
     o) date;$root/build-broken.sh -c10 -p -a -j18 shamu; exit ;;
     k) date;source $root/build/envsetup.sh
 	lunch broken_shamu-userdebug
-		make bootzip -j18 ;;
+		make bootzip -j18;exit ;;
     esac
 done
 
