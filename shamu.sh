@@ -3,16 +3,17 @@
 
 OPTIND=1
 root=/media/thomas/Dev/BrokenOs
+init= source build/envsetup.sh; lunch broken_shamu-userdebug
+rom='-p -a -j18 shamu'
+kernel='make bootimage -j18'
 
 while getopts "clean:dirty:quick:official:kernel:" opt; do
     case "$opt" in
-    c) date;$root/build-broken.sh -c1 -p -a -j18 shamu; exit;;
-    d) date;$root/build-broken.sh -c -p -a -j18 shamu; exit;;
-    q) date;$root/build-broken.sh -c14 -p -a -j18 shamu; exit;;
-    o) date;$root/build-broken.sh -c10 -p -a -j18 shamu; exit ;;
-    k) date;source $root/build/envsetup.sh;
-	lunch broken_shamu-userdebug;
-		make bootimage -j18;exit ;;
+    c) date;$root/build-broken.sh -c1 $rom; exit;;
+    d) date;$root/build-broken.sh -c $rom; exit;;
+    q) date;$root/build-broken.sh -c14 $rom; exit;;
+    o) date;$root/build-broken.sh -c10 $rom; exit ;;
+    k) date;$root; $init; $kernel;exit ;;
     esac
 done
 
