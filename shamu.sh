@@ -2,7 +2,7 @@
 # used with .bashrc alias n6='reset && ./scripts/shamu.sh'
 
 OPTIND=1
-root=/media/thomas/Dev/BrokenOs
+root=/media/thomas/Dev/BrokenOs-M
 init= source build/envsetup.sh; lunch broken_shamu-userdebug
 rom='-p -a -j18 shamu'
 kernel='make bootimage -j18'

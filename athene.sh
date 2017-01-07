@@ -2,7 +2,7 @@
 # used with .bashrc alias g4='reset && ./scripts/athene.sh'
 
 OPTIND=1
-root=/media/thomas/Dev/BrokenOs
+root=/media/thomas/Dev/BrokenOs-M
 init= source build/envsetup.sh; lunch broken_athene-userdebug
 rom='-p -a -j18 athene'
 kernel='make bootimage -j18'
