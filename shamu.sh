@@ -1,5 +1,5 @@
 #!/bin/bash
-# used with .bashrc alias n6='reset && ./scripts/shamu.sh'
+# used with .bashrc alias n6m='reset && ./scripts/shamu.sh'
 
 OPTIND=1
 root=/media/thomas/Dev/BrokenOs-M

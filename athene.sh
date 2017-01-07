@@ -1,5 +1,5 @@
 #!/bin/bash
-# used with .bashrc alias g4='reset && ./scripts/athene.sh'
+# used with .bashrc alias g4m='reset && ./scripts/athene.sh'
 
 OPTIND=1
 root=/media/thomas/Dev/BrokenOs-M
