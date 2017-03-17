@@ -4,7 +4,7 @@
 OPTIND=1
 root=$PWD
 init= source build/envsetup.sh; lunch broken_shamu-userdebug
-rom='-p -a -j18 shamu'
+rom='-p -a -j8 shamu'
 kernel='make bootimage -j18'
 
 while getopts "clean:dirty:official:kernel:sync" opt; do

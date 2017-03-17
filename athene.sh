@@ -4,7 +4,7 @@
 OPTIND=1
 root=$PWD
 init= source build/envsetup.sh; lunch broken_athene-userdebug
-rom='-p -a -j18 athene'
+rom='-p -a -j8 athene'
 kernel='make bootimage -j18'
 
 while getopts "clean:dirty:official:kernel:sync" opt; do
