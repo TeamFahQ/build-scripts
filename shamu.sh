@@ -3,17 +3,17 @@
 
 OPTIND=1
 root=$PWD
-init= source build/envsetup.sh; lunch broken_shamu-userdebug
-rom='-p -a -j8 shamu'
+init= source build/envsetup.sh;breakfast aquarios_shamu-userdebug
+rom='make bacon -j10'
 kernel='make bootimage -j18'
 
 while getopts "clean:dirty:official:kernel:sync" opt; do
     case "$opt" in
-    c) date;$root/build-broken.sh -c1 $rom; exit;;
-    d) date;$root/build-broken.sh -c $rom; exit;;
-    o) date;$root/build-broken.sh -c10 $rom; exit ;;
+    c) date;$init && make clean && reset && $rom; exit;;
+    d) date;$init && $rom; exit;;
+    o) date;echo wip; exit ;;
     k) date;$root; $init; $kernel;exit ;;
-    s) date;repo sync -j4 --force-sync;exit ;;
+    s) date;repo sync -j4 --force-sync && reset;exit ;;
     esac
 done
 
