@@ -1,11 +1,11 @@
 #!/bin/bash
-# used with .bashrc alias n6='reset && ./scripts/shamu.sh'
+# used with .bashrc alias g4='reset && ./scripts/trltexx.sh'
 
 OPTIND=1
 root=$PWD
-init= source build/envsetup.sh; lunch broken_shamu-userdebug
-rom='-p -a -j8 shamu'
-out='out/target/product/shamu'
+init= source build/envsetup.sh; lunch broken_trltexx-userdebug
+rom='-p -a -j8 trltexx'
+out='out/target/product/trltexx'
 kernel='make bootimage -j18'
 
 while getopts "clean:dirty:official:kernel:sync" opt; do
